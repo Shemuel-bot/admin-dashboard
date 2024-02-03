@@ -1,16 +1,33 @@
 .container{
     display: grid;
-    grid-template-columns: 1fr, 3fr, 1fr;
+    grid-template-columns: 2fr, 3fr 1fr;
     grid-template-rows: 1fr, 4fr;
 }
 .header{
-    background-color: white;
+    background-color: rgb(202, 76, 76);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 .main-content{
-    background-color: #e2e8f0;
+    background-color: #c04495;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.trending-anouncements{
+    background-color: #60e05b;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 .sidebar{
     background-color: #22d3ee;
-    width: 50vw;
-    height: 50vh;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
