@@ -15,11 +15,75 @@ body{
     grid-template-rows: 1fr, 4fr;
 }
 .header{
-    background-color: rgb(202, 76, 76);
+    display: grid;
+    grid-template-rows: 1fr, 3fr;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 10px rgba(133, 133, 133, 0.575);
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
+}
+input{
+    font-size: larger;
+    border-style: none;
+    background-color: #cbd5e1;
+    border-radius: 30px;
+    margin-right: 20%;
+    height: 40%;
+    width: 40%;
+}
+.search-userimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-userimg>svg{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+.search-userimg>p>img{
+    width: 60px;
+    height: 60px;
+}
+.search-userimg>p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 900;
+    font-size: large;
+    margin-right: 5%;
+}
+.user-button{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+.user-button>p{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 30px;
+    gap: 20px;
+}
+img{
+    border-radius: 50px;
+}
+button{
+    margin-right: 20px;
+    color: white;
+    background-color: #0284c7;
+    font-size: large;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 30%;
 }
 .main-content>div>svg{
     width: 25px;
@@ -48,8 +112,8 @@ h3{
     grid-row-start: 2;
     grid-row-end: 2;
 }
-.main-content>div{
 
+.main-content>div{
     font-size: larger;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -61,13 +125,25 @@ h3{
 
 }
 .trending-anouncements{
-    background-color: #60e05b;
+    background-color: #5fe05b00;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
 }
-
+.anouncements{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+}
+.anouncements>div{
+    border-radius: 10px;
+    border-bottom-style: dashed;
+    border-color: #b1b1b1c2;
+    border-bottom-width: 1px;
+    width: 50%;
+}
 .sidebar>div{
     display: flex;
     gap: 8px;
