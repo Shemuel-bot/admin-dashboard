@@ -1,3 +1,14 @@
+@font-face {
+    font-family: roboto;
+
+    src: url(Fonts/Roboto/Roboto-Light.ttf)
+    
+}
+body{
+    font-family: roboto;
+    background-color: #e2e8f0;
+}
+
 .container{
     display: grid;
     grid-template-columns: 2fr, 3fr 1fr;
@@ -10,12 +21,44 @@
     grid-row-start: 1;
     grid-row-end: 1;
 }
+.main-content>div>svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    
+}
+h3{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.main-content>div>p{margin-left: 15px; margin-top: 0px;}
+.star-icon{
+    margin-left: 70%;
+}
 .main-content{
-    background-color: #c04495;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 50px;
+    row-gap: 30px;
+    margin: 20px;
+    margin-top: 5rem;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+}
+.main-content>div{
+
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-left-style:solid;
+    border-color: #fbbf24;
+    border-left-width: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0px 8px 10px rgba(109, 109, 109, 0.377);
+
 }
 .trending-anouncements{
     background-color: #60e05b;
@@ -25,7 +68,8 @@
     grid-row-end: 2;
 }
 .sidebar{
-    background-color: #22d3ee;
+    background-color: #38bdf8;
+    padding-right: 7vw;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
